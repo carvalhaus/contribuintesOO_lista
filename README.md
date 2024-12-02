@@ -26,19 +26,34 @@ O projeto utiliza uma classe `TaxPayer` para representar cada contribuinte, com 
 
 O programa deve ler os dados de N contribuintes, armazenar em uma lista `List<TaxPayer>` e, para cada contribuinte, exibir um resumo do imposto devido.
 
-## Exemplo de Saída
+## Exemplo de Entrada
 ```
-Taxpayer: John
-Salary Income: 4000.00
-Services Income: 3000.00
-Capital Income: 1000.00
-Health Spending: 2000.00
-Education Spending: 1000.00
-Taxable Income: 6200.00
-Tax: 1020.00
+Quantos contribuintes você vai digitar? 2
+
+Digite os dados do 1o contribuinte:
+Renda anual com salário: 48000.00
+Renda anual com prestação de serviço: 0.00
+Renda anual com ganho de capital: 800.00
+Gastos médicos: 400.00
+Gastos educacionais: 5400.00
+
+Digite os dados do 2o contribuinte:
+Renda anual com salário: 189000.00
+Renda anual com prestação de serviço: 55184.93
+Renda anual com ganho de capital: 20000.00
+Gastos médicos: 600.00
+Gastos educacionais: 7500.00
 ```
 
-## Como Executar
-1. Compile o código Java contendo a implementação da classe `TaxPayer` e do programa principal.
-2. Execute o programa, fornecendo os dados dos contribuintes quando solicitado.
-3. O programa irá exibir o resumo do imposto devido para cada contribuinte.
+## Exemplo de Saída
+```
+Resumo do 1o contribuinte:
+Imposto bruto total: 4960.00
+Abatimento: 1488.00
+Imposto devido: 3472.00
+
+Resumo do 2o contribuinte:
+Imposto bruto total: 50077.74
+Abatimento: 8100.00
+Imposto devido: 41977.74
+```
